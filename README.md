@@ -1,2 +1,3 @@
-# loan-tracker
+# Loan tracker
+
 Python-based loan tracker
