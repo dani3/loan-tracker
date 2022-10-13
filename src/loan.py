@@ -1,7 +1,5 @@
 """Loan module."""
 
-from typing import Optional
-
 
 class Loan:
     """Loan class."""
@@ -9,14 +7,14 @@ class Loan:
     name: str
     is_fixed: bool
     interest_rate: float
-    bond_rate: Optional[float]
+    bond_rate: float | None
 
     def __init__(
         self,
         name: str,
         is_fixed: bool,
         interest_rate: float,
-        bond_rate: Optional[float] = None,
+        bond_rate: float | None = None,
     ) -> None:
         self.name = name
         """Loan name."""
