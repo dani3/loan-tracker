@@ -5,6 +5,7 @@ class Loan:
     """Loan class."""
 
     name: str
+    years: int
     is_fixed: bool
     interest_rate: float
     bond_rate: float | None
@@ -12,12 +13,16 @@ class Loan:
     def __init__(
         self,
         name: str,
+        years: int,
         is_fixed: bool,
         interest_rate: float,
         bond_rate: float | None = None,
     ) -> None:
         self.name = name
         """Loan name."""
+
+        self.years = years
+        """Number of years."""
 
         self.is_fixed = is_fixed
         """Either fixed or variable rate."""
